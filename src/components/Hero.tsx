@@ -8,12 +8,12 @@ export default function Hero() {
 	  <div className="mx-auto max-w-7xl text-center">
 		<div className="flex justify-center mb-4">
 		  <Image
-			src="/logo/logo.jpg"
-			alt="Sibalukhulu Pipeline Contractors Pty Ltd"
-			width={280}
-			height={110}
+			src="/logo/logo.svg"
+			alt="Sibalukhulu Pipeline Contractors"
+			width={220}
+			height={52}
 			priority
-			className="h-20 md:h-24 lg:h-28 w-auto"
+			className="h-16 md:h-20 lg:h-24 w-auto"
 		  />
 		</div>
 		<h1 className="text-4xl md:text-5xl font-bold text-primary">{siteConfig.name}</h1>
