@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -15,8 +16,9 @@ export default function Navbar() {
   return (
 	<header className="border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-30">
 	  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-		<Link href="/" className="font-semibold text-gray-900">
-		  Sibalukhulu Pipeline
+		<Link href="/" className="flex items-center gap-3">
+		  <Image src="/logo/logo.svg" alt="Sibalukhulu Pipeline Contractors" width={48} height={48} />
+		  <span className="font-semibold text-sm md:text-base text-gray-900">Sibalukhulu Pipeline Contractors Pty Ltd</span>
 		</Link>
 		<nav className="hidden md:flex items-center gap-6 text-sm">
 		  {navItems.map((item) => (
