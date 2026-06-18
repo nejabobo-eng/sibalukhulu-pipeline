@@ -17,7 +17,14 @@ export default function Navbar() {
 	<header className="border-b bg-primary text-white sticky top-0 z-30">
 	  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
 		<Link href="/" className="flex items-center gap-3">
-		  <Image src="/logo/logo.svg" alt="Sibalukhulu Pipeline Contractors" width={48} height={48} />
+		  <Image
+			src="/logo/logo.jpg"
+			alt="Sibalukhulu Pipeline Contractors Pty Ltd"
+			width={160}
+			height={50}
+			className="h-10 w-auto"
+			priority
+		  />
 		  <span className="font-semibold text-sm md:text-base text-white">Sibalukhulu Pipeline Contractors Pty Ltd</span>
 		</Link>
 		<nav className="hidden md:flex items-center gap-6 text-sm">
