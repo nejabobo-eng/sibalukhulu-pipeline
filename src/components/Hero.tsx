@@ -9,13 +9,23 @@ export default function Hero() {
 		<p className="mt-3 text-lg text-secondary max-w-3xl mx-auto">
 		  Pipeline Engineering • Civil Infrastructure • Water Reticulation • Industrial Construction
 		</p>
-		<div className="mt-8 flex gap-4 justify-center">
-			<Link href="/contact" className="bg-accent text-white px-6 py-3 rounded-md">
+		<div className="mt-8 flex flex-wrap gap-3 justify-center">
+		  <Link href="/contact" className="bg-accent text-white px-6 py-3 rounded-md">
 			Request Quote
 		  </Link>
-			<Link href="/projects" className="border border-accent text-accent px-6 py-3 rounded-md">
-			View Projects
+		  <Link href="/capability-statement" className="border border-accent text-accent px-6 py-3 rounded-md">
+			Capability Statement
 		  </Link>
+		  {siteConfig.whatsapp && (
+			<a
+			  href={`https://wa.me/${siteConfig.whatsapp.replace(/\D/g, "")}`}
+			  className="border border-accent text-accent px-6 py-3 rounded-md"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			>
+			  WhatsApp
+			</a>
+		  )}
 		</div>
 	  </div>
 	</section>
