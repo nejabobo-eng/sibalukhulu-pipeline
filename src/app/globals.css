@@ -3,11 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Brand colors (adjust to match the uploaded logo) */
+  --primary: #111827; /* deep navy/gray from placeholder logo */
+  --secondary: #374151; /* steel gray */
+  --accent: #16a34a; /* action green (WhatsApp/CTA) */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
